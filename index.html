@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label>Name:</label>
+            <input type="textbox" name="first" id="fn" required="true">
+            <input type="textbox" name="last" id="ln" required="true"> 
+            <br>
+            <br>
+            <label>Email Address:</label>
+            <input type="textbox" name="address" id="add" pattern="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{3}" required="true">
+            <label>Phone:</label>
+            <input type="tel" name="phone" id="pho" pattern="[2-9]{1}[0-9]{2}-[0-9]{3}-[0-9]{4}" required="true">
+            <br>
+            <br>
+        </fieldset>
+        <fieldset>
+            <label>Card:</label>
+            <input type="textbox" name="card" id="card" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required="true">
+            <br>
+            <br>
+            <label>CCV:</label>
+            <input type="textbox" name="ccv" id="ccv" pattern="[0-9]{3}"required="true">
+            <label>Expiration Date:</label>
+            <input type="textbox" name="ED" id="ed" pattern="[0-1]{1}[0-9]{1}/[0-3]{1}[0-9]{1}" required="true">
+            <input type="submit" name="button" id="sub">
+        </fieldset>
+    </form>
+</body>
+</html>
